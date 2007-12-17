@@ -11,7 +11,6 @@ Group: 		Networking/Instant messaging
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License: 	GPL
 URL: 		http://pidgin-festival.sourceforge.net/
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	pidgin-devel
 Requires:	pidgin
 Requires:	festival
