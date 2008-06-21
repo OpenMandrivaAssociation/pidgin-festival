@@ -1,4 +1,4 @@
-%define version 2.2
+%define version 2.3
 %define release %mkrel 1
 
 %define name pidgin-festival
@@ -43,7 +43,9 @@ rm -rf %{buildroot}
 rm -f %{buildroot}%{_libdir}/purple-2/*.la \
       %{buildroot}%{_libdir}/purple-2/*.a
 
-%files
+%find_lang %name
+
+%files -f %name.lang
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog NEWS README
 %{_libdir}/purple-2/*.so
