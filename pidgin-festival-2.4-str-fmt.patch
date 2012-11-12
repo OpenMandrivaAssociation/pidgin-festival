@@ -1,0 +1,29 @@
+--- pidgin-festival-2.4/src/festival.c~	2009-05-13 08:32:19.000000000 +0200
++++ pidgin-festival-2.4/src/festival.c	2009-06-12 23:23:53.000000000 +0200
+@@ -103,7 +103,7 @@
+     daemon=sndserver;
+   }
+   else{
+-    purple_debug(PURPLE_DEBUG_INFO, "pidgin festival sound method ", sndType);
++    purple_debug(PURPLE_DEBUG_INFO, "pidgin festival sound method ", "%s", sndType);
+   }
+   return daemon;
+ }
+@@ -320,7 +320,7 @@
+ 	text->str[i] = ' ';
+ 
+     g_string_printf(buffer,"(SayText \"%s\")", text->str);
+-    purple_debug(PURPLE_DEBUG_INFO, "pidgin festival", buffer->str);
++    purple_debug(PURPLE_DEBUG_INFO, "pidgin festival", "%s", buffer->str);
+     fputs(buffer->str,festival_pf);
+     fflush(festival_pf);
+     g_string_free(buffer,TRUE);
+@@ -532,7 +532,7 @@
+ 
+   char proc[1024];
+   sprintf(proc, "%s %s", snd((char *)purple_prefs_get_string("/pidgin/sound/method")), line);
+-  purple_debug(PURPLE_DEBUG_INFO, "pidgin festival", proc);
++  purple_debug(PURPLE_DEBUG_INFO, "pidgin festival", "%s", proc);
+ 
+   int errno=0;
+   festival_pf= popen(proc,"w");
