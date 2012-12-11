@@ -50,3 +50,26 @@ rm -f %{buildroot}%{_libdir}/purple-2/*.la \
 %clean
 rm -rf %{buildroot}
 
+
+
+%changelog
+* Fri Jun 12 2009 Frederik Himpe <fhimpe@mandriva.org> 2.4-1mdv2010.0
++ Revision: 385599
+- Update to new version 2.4
+- Add patch to build with -Werror=format-security
+
+* Sat Jun 21 2008 Funda Wang <fundawang@mandriva.org> 2.3-1mdv2009.0
++ Revision: 227744
+- New version 2.3
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Fri Oct 19 2007 Götz Waschk <waschk@mandriva.org> 2.2-1mdv2008.1
++ Revision: 100230
+- new version for pidgin
+- import
+
