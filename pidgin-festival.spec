@@ -1,7 +1,7 @@
 Summary: Pidgin extension, to use speech synthetisis
 Name:		pidgin-festival
 Version: 	2.4
-Release: 	%mkrel 1
+Release: 	2
 Group: 		Networking/Instant messaging
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		pidgin-festival-2.4-str-fmt.patch
