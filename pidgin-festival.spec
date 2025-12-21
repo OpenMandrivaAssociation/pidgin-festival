@@ -8,6 +8,11 @@ Patch0:		pidgin-festival-2.4-str-fmt.patch
 License: 	GPL
 URL: 		https://pidgin-festival.sourceforge.net/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pidgin-devel
 Requires:	pidgin
 Requires:	festival
